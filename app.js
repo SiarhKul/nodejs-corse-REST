@@ -33,7 +33,7 @@ app.use((error, req, res, next) => {
 
 mongoose
     .connect(
-        'mongodb+srv://siarhkul:12345@nodecoursecluster.1sfoxnj.mongodb.net/?retryWrites=true&w=majority&appName=NodeCourseCluster', {useNewUrlParser: true}
+        'mongodb+srv://siarhkul:12345@nodecoursecluster.1sfoxnj.mongodb.net/messages?retryWrites=true&w=majority&appName=NodeCourseCluster', {useNewUrlParser: true}
     )
     .then(result => {
       app.listen(8080);
